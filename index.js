@@ -6,4 +6,4 @@ btn.onclick = function() {
   count++;
   alert("*fart*");
   countElement.innerHTML = `You fell for it ${count} times`;
-}
+};
