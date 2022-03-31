@@ -12,7 +12,10 @@
         alert("*fart*");
         let countElement = document.getElementById("count");
         count++;
-        countElement.innerHTML = `Haha, you fell for it ${count} times`;
+        if(count != 1)
+          countElement.innerHTML = `Haha, you fell for it ${count} times`;
+        else
+          countElement.innerHTML = `Haha, you fell for it ${count} time`;
       }
     </script>
     <button type="button" id="fard" onclick='func();'>👉</button>
