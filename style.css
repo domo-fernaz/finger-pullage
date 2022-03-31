@@ -1,5 +1,9 @@
-h1 {
+body {
   text-align: center;
   margin: auto;
   width: 50%;
+}
+
+button {
+  font-size: 100px;
 }
