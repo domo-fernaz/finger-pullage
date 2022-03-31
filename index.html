@@ -9,10 +9,10 @@
     <h1>Hey kid, pull my finger</h1>
     <script>
       var count = 0;
-      var extras = document.getElementById("extras");
       function func() {
         new Audio("fingerfard.mp3").play();
         let countElement = document.getElementById("count");
+        let extras = document.getElementById("extras");
         count++;
         if(count != 1)
           countElement.innerHTML = `Haha, you fell for it ${count} times`;
