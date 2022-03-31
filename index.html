@@ -20,15 +20,15 @@
           countElement.innerHTML = `Haha, you fell for it ${count} time`;
         
         if(count == 5)
-          extras.innerHTML = `<p class="rainbow">Try getting to 69</p>`;
+          extras.innerHTML += `<p class="rainbow">Try getting to 69</p>`;
         
         if(count == 69)
-          extras.innerHTML = `<iframe width="560" height="315" src="https://www.youtube.com/embed/CYqq9Ovz_9c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`;
+          extras.innerHTML += `<iframe width="560" height="315" src="https://www.youtube.com/embed/CYqq9Ovz_9c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`;
       }
     </script>
     <button type="button" id="fard" onclick='func();'>👉</button>
     <p id="count" times=0>...</p>
-    <div><p class="rainbow">....</p></div>
+    <div id="extras"><p class="rainbow">....</p></div>
   </body>
   
 </html>
