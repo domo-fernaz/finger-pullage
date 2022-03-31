@@ -9,6 +9,7 @@
     <h1>Hey kid, pull my finger</h1>
     <script>
       var count = 0;
+      var extras = document.getElementById("extras");
       function func() {
         new Audio("fingerfard.mp3").play();
         let countElement = document.getElementById("count");
@@ -18,8 +19,11 @@
         else
           countElement.innerHTML = `Haha, you fell for it ${count} time`;
         
+        if(count == 2)
+          extras.innerHTML += `<p>Try getting to 69</p>`;
+        
         if(count == 69)
-          document.getElementById("extras").innerHTML += `<iframe width="560" height="315" src="https://www.youtube.com/embed/CYqq9Ovz_9c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`;
+          extras.innerHTML += `<iframe width="560" height="315" src="https://www.youtube.com/embed/CYqq9Ovz_9c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`;
       }
     </script>
     <button type="button" id="fard" onclick='func();'>👉</button>
