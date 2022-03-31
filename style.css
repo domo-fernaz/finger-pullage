@@ -12,4 +12,5 @@ button {
 #topleft {
   margin: 0px;
   font-size: 8px;
+  text-align: left;
 }
