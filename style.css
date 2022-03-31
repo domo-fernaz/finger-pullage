@@ -3,9 +3,12 @@ body {
   text-align: center;
   margin: auto;
   width: 50%;
-  height: 50%;
 }
 
 button {
   font-size: 150px;
+}
+
+#topleft {
+  width: 100%;
 }
