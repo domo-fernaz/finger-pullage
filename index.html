@@ -17,10 +17,14 @@
           countElement.innerHTML = `Haha, you fell for it ${count} times`;
         else
           countElement.innerHTML = `Haha, you fell for it ${count} time`;
+        
+        if(count == 69)
+          document.getElementById("extras").innerHTML += `<iframe width="560" height="315" src="https://www.youtube.com/embed/CYqq9Ovz_9c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`;
       }
     </script>
     <button type="button" id="fard" onclick='func();'>👉</button>
     <p id="count" times=0>...</p>
+    <div id="extras"></div>
   </body>
   
 </html>
