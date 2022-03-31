@@ -1,9 +1,10 @@
 body {
+  font-family: "Comic Sans MS";
   text-align: center;
   margin: auto;
   width: 50%;
 }
 
 button {
-  font-size: 100px;
+  font-size: 150px;
 }
