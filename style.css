@@ -14,12 +14,7 @@ button {
 }
 
 .rainbow {
-  text-align: center;
-  text-decoration: underline;
-  font-size: 32px;
-  font-family: monospace;
-  letter-spacing: 5px;
-  animation: colorRotate 6s linear 0s infinite;
+  animation: colorRotate 2s linear 0s infinite;
 }
 
 @keyframes colorRotate {
