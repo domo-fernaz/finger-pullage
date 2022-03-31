@@ -10,5 +10,6 @@ button {
 }
 
 #topleft {
-  width: 100%;
+  margin: 0px;
+  font-size: 8px;
 }
