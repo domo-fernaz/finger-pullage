@@ -5,9 +5,14 @@
     <link href="style.css" rel="stylesheet">
   </head>
   <body>
-    <script src="index.js"></script>
     <h1>Hey kid, pull my finger</h1>
-    <button type="button" id="fard" onclick='alert("*fart*"); let count = document.getElementById("count"); count.times++; count.innerHTML = `Haha, you fell for it ${count.times} times`;'>👉</button>
+    <script>
+      alert("*fart*");
+      let count = document.getElementById("count");
+      count.times++;
+      count.innerHTML = `Haha, you fell for it ${count.times} times`;
+    </script>
+    <button type="button" id="fard" onclick='func();'>👉</button>
     <p id="count" times=0>...</p>
   </body>
   
