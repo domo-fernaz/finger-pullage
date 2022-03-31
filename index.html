@@ -7,11 +7,12 @@
   <body>
     <h1>Hey kid, pull my finger</h1>
     <script>
+      var count = 0;
       function func() {
         alert("*fart*");
-        let count = document.getElementById("count");
-        count.times++;
-        count.innerHTML = `Haha, you fell for it ${count.times} times`;
+        let countElement = document.getElementById("count");
+        count++;
+        countElement.innerHTML = `Haha, you fell for it ${count} times`;
       }
     </script>
     <button type="button" id="fard" onclick='func();'>👉</button>
