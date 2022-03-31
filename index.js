@@ -1,7 +1,6 @@
-let btn = document.getElementById("fard");
-
-btn.addEventListener("click", () => {
-  let countElement = document.getElementById("count");
+function func() {
   alert("*fart*");
-  countElement.innerHTML = `You fell for it lol`;
-});
+  let count = document.getElementById("count");
+  count.times++;
+  count.innerHTML = `Haha, you fell for it ${count.times} times`;
+}
