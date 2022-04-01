@@ -9,6 +9,14 @@
     <h1>Hey kid, pull my finger</h1>
     <script>
       var count = 0;
+      var autoDelay = 0;
+      
+      function startAutoclick() {
+        document.getElementById("fard").click();
+        sleep(autoDelay);
+        window.requestAnimationFrame(startAutoclick);
+      }
+      
       function func() {
         new Audio("fingerfard.mp3").play();
         let countElement = document.getElementById("count");
