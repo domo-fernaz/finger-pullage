@@ -11,12 +11,6 @@
       var count = 0;
       var autoDelay = 100;
       
-      function startAutoclick() {
-        document.getElementById("fard").click();
-        sleep(autoDelay);
-        window.requestAnimationFrame(startAutoclick);
-      }
-      
       function func() {
         new Audio("fingerfard.mp3").play();
         let countElement = document.getElementById("count");
@@ -48,6 +42,13 @@
             break;
         }
       }
+      
+      function startAutoclick() {
+        func();
+        sleep(autoDelay);
+        window.requestAnimationFrame(startAutoclick);
+      }
+      
     </script>
     <button type="button" id="fard" onclick='func();'>👉</button>
     <p id="count" times=0>...</p>
