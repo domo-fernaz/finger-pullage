@@ -10,6 +10,7 @@
     <script>
       var count = 0;
       var autoRank = 0;
+      var autoClick;
       
       function func() {
         new Audio("fingerfard.mp3").play();
@@ -43,7 +44,7 @@
             break;
             
           case 1000:
-            extras.innerHTML += `<p class="rainbow">----------</p><img src="epic.jpg" height=300><p class="rainbow">Wow. You fell for it 1000 times. You are so gullible.</p>`;
+            extras.innerHTML += `<p class="rainbow">----------</p><img src="epic.jpg" height=300><p class="rainbow">Wow. You fell for it 1000 times. You are so gullible.<br>Anyways, heres a 20 cps button.</p><button type="button" onclick="startRank2Autoclicker();">0_0</button>`;
             break;
             
           default:
@@ -56,7 +57,18 @@
         {}
         else {
           autoRank = 1;
-          setInterval(func, 100);
+          clearInterval(autoClick);
+          autoClick = setInterval(func, 100);
+        }
+      }
+      
+      function startRank2Autoclicker() {
+        if(autoRank >= 2)
+        {}
+        else {
+          autoRank = 2;
+          clearInterval(autoClick);
+          autoClick = setInterval(func, 50);
         }
       }
       
