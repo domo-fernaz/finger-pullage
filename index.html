@@ -19,14 +19,26 @@
         else
           countElement.innerHTML = `Haha, you fell for it ${count} time`;
         
-        if(count == 5)
+        switch (count) {
+          case 5:
           extras.innerHTML += `<p class="rainbow">Try getting to 69</p>`;
-        
-        if(count == 69)
-          extras.innerHTML += `<iframe width="560" height="315" src="https://www.youtube.com/embed/CYqq9Ovz_9c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`;
-        
-        if(count == 100)
-          extras.innerHTML += `<p>💯</p>`;
+          break;
+            
+          case 69:
+          extras.innerHTML += `<iframe width="560" height="315" src="https://www.youtube.com/embed/CYqq9Ovz_9c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><p class="rainbow">Nice.</p>`;
+          break;
+            
+          case 100:
+           extras.innerHTML += `<p>💯</p>`;
+           break;
+          
+          case 420:
+            extras.innerHTML+= `<img src="snoop-dogg-dance.gif" height=400><p class="rainbow">Smoke weed every day</p>`;
+            break;
+            
+          default:
+            break;
+        }
       }
     </script>
     <button type="button" id="fard" onclick='func();'>👉</button>
