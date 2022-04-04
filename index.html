@@ -5,20 +5,22 @@
     <link href="style.css" rel="stylesheet">
   </head>
   <body>
-    <a href="./other/me.html"><p id="small">(who tf made this!?!?)</p></a>
+    <a><span onclick="toggleFardSounds();">mute fart sfx</span></a><a href="./other/me.html"><span id="small">(who tf made this!?!?)</span></a>
     <p id="gray">Sound on for best experience!</p>
     <h1>Hey kid, pull my finger</h1>
     <script>
       var count = 0;
       var autoRank = 0;
       var autoClick;
+      var muteFardSounds = false;
       
       function omg() {
         new Audio("omg.mp3").play();
       }
       
       function func() {
-        new Audio("fingerfard.mp3").play();
+        if(!muteFardSounds)
+          new Audio("fingerfard.mp3").play();
         let countElement = document.getElementById("count");
         let extras = document.getElementById("extras");
         count++;
@@ -95,6 +97,13 @@
           clearInterval(autoClick);
           autoClick = setInterval(func, 20);
         }
+      }
+      
+      function toggleFardSounds() {
+        if(muteFardSounds == false)
+          muteFardSounds = true;
+        else
+          muteFardSounds = false;
       }
       
     </script>
