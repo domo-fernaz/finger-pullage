@@ -13,6 +13,10 @@ button {
   font-size: 10px;
 }
 
+#gray {
+  color: #c9c9c9;
+}
+
 .rainbow {
   animation: colorRotate 2s linear 0s infinite;
 }
