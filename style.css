@@ -9,12 +9,12 @@ button {
   font-size: 150px;
 }
 
-#small {
+.small {
   font-size: 10px;
 }
 
 #gray {
-  color: #ededed;
+  color: #ababab;
 }
 
 .rainbow {
