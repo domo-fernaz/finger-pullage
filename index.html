@@ -15,13 +15,16 @@
       var muteFardSounds = false;
       const fardSoundFiles = [
         "fingerfard.mp3",
-        "qfart.mp3",
-        "memfart.mp3"
+        "qfart.mp3"
       ];
       
       function fart() {
-        let index = Math.floor(Math.random() * fardSoundFiles.length);
-        new Audio(fardSoundFiles[index]).play();
+        if(Math.floor(Math.random * 10) == 9)
+          new Audio("memfart.mp3").play();
+        else {
+          let index = Math.floor(Math.random() * fardSoundFiles.length);
+          new Audio(fardSoundFiles[index]).play();
+        }
       }
       
       function omg() {
