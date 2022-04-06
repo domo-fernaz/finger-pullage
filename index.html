@@ -14,16 +14,17 @@
       var autoClick;
       var muteFardSounds = false;
       const fardSoundFiles = [
-        "fingerfard.mp3",
-        "qfart.mp3"
+        new Audio("fingerfard.mp3"),
+        new Audio("qfart.mp3")
       ];
+      const memfart = new Audio("memfart.mp3");
       
       function fart() {
         if(Math.floor(Math.random() * 15) == 14)
-          new Audio("memfart.mp3").play();
+          memfart.play();
         else {
           let index = Math.floor(Math.random() * fardSoundFiles.length);
-          new Audio(fardSoundFiles[index]).play();
+          fardSoundFiles[index].play();
         }
       }
       
