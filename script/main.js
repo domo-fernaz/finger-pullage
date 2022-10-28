@@ -3,6 +3,9 @@ let fartCountElement = document.getElementById("count");
 
 let fartCount = 0;
 let sound = true;
+let fartSounds = [
+  new Audio("../sound/lfard.mp3")
+];
 
 fartButton.addEventListener("click", () => {
   fartCount++;
