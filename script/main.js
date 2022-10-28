@@ -1,13 +1,13 @@
 let fartButton = document.getElementById("fard");
-let fartCount = document.getElementById("count");
+let fartCountElement = document.getElementById("count");
 
-let times = 0;
+let fartCount = 0;
 let sound = true;
 
-fartButton.onClick = function() {
-  times++;
-  fartCount.innerHTML = "Haha, you fell for it ${times} times"
+fartButton.addEventListener("click", () => {
+  fartCount++;
+  fartCountElement.innerHTML = "Haha, you fell for it ${fartCount} times";
   if(sound){
     
   }
-};
+});
