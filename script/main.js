@@ -11,6 +11,6 @@ fartButton.addEventListener("click", () => {
   fartCount++;
   fartCountElement.innerHTML = "Haha, you fell for it ${fartCount} times";
   if(sound){
-    
+    fartSounds[0].play();
   }
 });
