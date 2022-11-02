@@ -9,8 +9,8 @@ let fartSounds = [
 ];*/
 
 let extras = document.getElementById("extras");
-let txt = document.createTextNode("Fard");
+//let txt = document.createTextNode("Fard");
 
 fartButton.addEventListener("click", () => {
-  extras.appendChild(txt);
+  extras.appendChild(document.createTextNode("Fard"));
 });
