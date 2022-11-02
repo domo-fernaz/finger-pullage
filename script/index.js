@@ -14,3 +14,5 @@ let extras = document.getElementById("extras");
 fartButton.addEventListener("click", () => {
   extras.appendChild(document.createTextNode("Fard"));
 });
+
+new Audio("../sound/lfard.mp3").play();
