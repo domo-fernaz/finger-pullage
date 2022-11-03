@@ -1,5 +1,3 @@
-window.addEventListener("DOMContentLoaded", () => {
-  document.getElementById("fard").addEventListener("click", () => {
-    new Audio("../sound/lfard.mp3").play();
-  });
+document.getElementById("fard").addEventListener("click", () => {
+  new Audio("../sound/lfard.mp3").play();
 });
